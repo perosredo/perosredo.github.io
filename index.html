@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sredojevic.ca</title>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            font-family: 'Sofia Sans', sans-serif;
-            font-size: 5rem;
-        }
-        sup {
-              font-size: 1.4rem;
-              vertical-align: 1.8em;
-              margin-left: -0.3rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sredojevic.ca</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400&display=swap" rel="stylesheet">
+  <style>
+    /* Fade-in on load with a more pronounced upward movement */
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(25px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: 'Sofia Sans', sans-serif;
+      font-size: 9rem;
+      text-align: center;
+      padding: 20px;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    .brand {
+      line-height: 1;
+    }
+
+    sup {
+      font-size: 1.7rem;
+      vertical-align: 4.9rem;
+      margin-left: -1.5em;
+      transform: rotate(25deg);
+      display: inline-block;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <div>sre&nbsp;do&nbsp;je&nbsp;vic<sup>h</sup></div>
+  <div class="brand">
+    sre&nbsp;do&nbsp;je&nbsp;vic<sup>h</sup>
+  </div>
 </body>
 </html>
-
